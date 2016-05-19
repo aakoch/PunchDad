@@ -18,12 +18,14 @@ class GameScene: SKScene {
     
     
     override func didMoveToView(view: SKView) {
+        self.backgroundColor = UIColor.blackColor()
         /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Arial")
-        myLabel.text = "Punch dad!"
-        myLabel.fontSize = 60
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame) - 80)
+        let myLabel = SKLabelNode(fontNamed:"Party LET")
+        myLabel.fontSize = 80
+        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y: CGRectGetMaxY(self.frame) - 70)
         myLabel.zPosition = 1
+        myLabel.color = UIColor.blueColor()
+        myLabel.text = "Punch dad!"
         self.addChild(myLabel)
         
         
@@ -36,7 +38,7 @@ class GameScene: SKScene {
         
         
         punchLabel.fontSize = 20
-        punchLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y: 20)
+        punchLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y: 25)
         punchLabel.zPosition = 1
         self.addChild(punchLabel)
         
@@ -48,7 +50,8 @@ class GameScene: SKScene {
         
         
         timeLabel.fontSize = 10
-        timeLabel.position = CGPoint(x:CGRectGetMidX(self.frame) + 10, y: 10)
+        timeLabel.color = UIColor.lightGrayColor()
+        timeLabel.position = CGPoint(x: CGRectGetMidX(self.frame), y: 10)
         timeLabel.zPosition = 1
         self.addChild(timeLabel)
     }
@@ -76,10 +79,14 @@ class GameScene: SKScene {
         else if interval < 0.8 {
             punchTypeLabel.text = "Jab!"
             hit = true
+            sprite.xScale *= 1.01
+            sprite.yScale *= 1.01
         }
         else if interval < 1 {
             punchTypeLabel.text = "Uppercut!"
             hit = true
+            sprite.xScale *= 1.1
+            sprite.yScale *= 1.1
         }
         else if interval <= 3 {
             punchTypeLabel.text = "Miss! (too long)"
@@ -91,20 +98,15 @@ class GameScene: SKScene {
             sprite.xScale = 1
             sprite.yScale = 1
             sprite.position = CGPoint(x:CGRectGetMidX(self.frame) - 10, y:CGRectGetMidY(self.frame))
-            i=0
+            i = 0
+            
+            punchLabel.text = "Gimmie your best shot!"
         }
         
         if hit {
             i += 1
             punchLabel.text = "You've punched dad " + String(i) + " times"
             
-            sprite.xScale *= 1.0001
-            sprite.yScale *= 1.0001
-            
-            if i % 10 == 0 {
-                sprite.xScale *= 1.2
-                sprite.yScale *= 1.2
-            }
         }
         
     }

@@ -19,6 +19,7 @@ class GameViewController: UIViewController {
             let skView = self.view as! SKView
             //skView.showsFPS = false
             //skView.showsNodeCount = false
+            skView.backgroundColor = UIColor.blackColor()
             
             /* Sprite Kit applies additional optimizations to improve rendering performance */
             skView.ignoresSiblingOrder = true
