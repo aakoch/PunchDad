@@ -16,6 +16,7 @@
 		01235A6B1CED4E77000E0ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01235A691CED4E77000E0ED2 /* LaunchScreen.storyboard */; };
 		01235A761CED4E77000E0ED2 /* PunchDadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01235A751CED4E77000E0ED2 /* PunchDadTests.swift */; };
 		01235A811CED4E77000E0ED2 /* PunchDadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01235A801CED4E77000E0ED2 /* PunchDadUITests.swift */; };
+		0189D5081CFD212A004F50EB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0189D5071CFD212A004F50EB /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		01235A7C1CED4E77000E0ED2 /* PunchDadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunchDadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01235A801CED4E77000E0ED2 /* PunchDadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchDadUITests.swift; sourceTree = "<group>"; };
 		01235A821CED4E77000E0ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0189D5071CFD212A004F50EB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0189D5081CFD212A004F50EB /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		01235A501CED4E77000E0ED2 = {
 			isa = PBXGroup;
 			children = (
+				0189D5071CFD212A004F50EB /* Accelerate.framework */,
 				01235A5B1CED4E77000E0ED2 /* PunchDad */,
 				01235A741CED4E77000E0ED2 /* PunchDadTests */,
 				01235A7F1CED4E77000E0ED2 /* PunchDadUITests */,
@@ -501,6 +505,7 @@
 				01235A871CED4E77000E0ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01235A881CED4E77000E0ED2 /* Build configuration list for PBXNativeTarget "PunchDadTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +514,7 @@
 				01235A8A1CED4E77000E0ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01235A8B1CED4E77000E0ED2 /* Build configuration list for PBXNativeTarget "PunchDadUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +523,7 @@
 				01235A8D1CED4E77000E0ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

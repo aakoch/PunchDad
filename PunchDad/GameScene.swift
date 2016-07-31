@@ -16,6 +16,9 @@ class GameScene: SKScene {
     let sprite = SKSpriteNode(imageNamed:"angry_adam")
     let timeLabel = SKLabelNode(fontNamed:"Arial")
     
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        
+    }
     
     override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor.blackColor()

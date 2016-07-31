@@ -10,6 +10,13 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
+    
+    
+//    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
+//        if motion == .MotionShake {
+//            self.shakeLabel.text = "Shaken, not stirred"
+//        }
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
